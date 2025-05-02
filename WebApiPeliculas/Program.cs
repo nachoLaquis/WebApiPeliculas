@@ -1,6 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using WebApiPeliculas.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+/**
+ * Configuración del DbContext para SQL Server
+ * Registra ApplicationDbContext como servicio scoped (una instancia por request).
+ * La cadena de conexión se resuelve desde IConfiguration.
+ * */
+builder.Services.AddDbContext<ApplicationDbContext>(opciones => opciones.UseSqlServer(builder.Configuration.GetConnectionString("ConexionSql")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

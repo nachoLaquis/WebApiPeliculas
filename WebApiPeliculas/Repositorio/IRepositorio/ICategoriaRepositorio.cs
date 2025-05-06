@@ -1,5 +1,6 @@
 ﻿using WebApiPeliculas.Modelos;
 
+// [CAT-IREP] Contrato del repositorio para Categoría
 namespace WebApiPeliculas.Repositorio.IRepositorio
 {
     public interface ICategoriaRepositorio

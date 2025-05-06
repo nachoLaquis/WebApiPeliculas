@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+// [CAT-ENTITY] Define la entidad Categoría para la base de datos
 namespace WebApiPeliculas.Modelos
 {
     public class Categoria

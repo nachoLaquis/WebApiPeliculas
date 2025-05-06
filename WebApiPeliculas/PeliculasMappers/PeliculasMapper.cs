@@ -8,6 +8,7 @@ namespace WebApiPeliculas.PeliculasMapper
     {
         public PeliculasMapper()
         {
+            // [CAT-MAP] Mapeos para entidad Categoría
             CreateMap<Categoria, CategoriaDto>().ReverseMap();
             CreateMap<Categoria, CategoriaCrearDto>().ReverseMap();
         }
